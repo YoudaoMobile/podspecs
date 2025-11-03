@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftCrypto'
-  s.version = '3.15.1'
+  s.version = '4.1.0'
   s.license = { :type => 'Apache-2.0', :file => 'LICENSE.txt' }
   s.summary = 'Open-source implementation of a substantial portion of the API of Apple CryptoKit'
   s.description = <<-DESC
