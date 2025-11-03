@@ -20,7 +20,6 @@ Pod::Spec.new do |spec|
   spec.dependency("OrderedCollections", " = 1.1.4")
   spec.dependency("JWTKit", "= 4.13.5")
 
-  spec.resource_bundles = {"Privacy" => ["Sources/LiveKit/PrivacyInfo.xcprivacy"]}
 
   xcode_output = `xcodebuild -version`.strip
   major_version = xcode_output =~ /Xcode\s+(\d+)/ ? $1.to_i : 15
