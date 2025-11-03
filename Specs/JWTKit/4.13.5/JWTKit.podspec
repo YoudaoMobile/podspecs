@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/JWTKit/**/*.swift'
-    ss.dependency 'SwiftCrypto', '~> 3.15.1'
+    ss.dependency 'SwiftCrypto', '~> 4.1.0'
     ss.dependency 'JWTKit/CJWTKitBoringSSL'
   end
 
