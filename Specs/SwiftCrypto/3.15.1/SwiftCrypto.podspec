@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
     'Sources/Crypto/Key Agreement/ECDH.swift.gyb',
     'Sources/Crypto/Signatures/ECDSA.swift.gyb'
   ]
-  
-  s.resources = ['Sources/Crypto/PrivacyInfo.xcprivacy']
-
+  s.resource_bundles = {
+    'SwiftCrypto' => ['Sources/Crypto/PrivacyInfo.xcprivacy']
+  }
   s.pod_target_xcconfig = {
     'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => '$(inherited) CRYPTO_IN_SWIFTPM'
   }
