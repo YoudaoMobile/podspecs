@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   ]
 
   s.resource_bundles = {
-    'Privacy' => ['Sources/Crypto/PrivacyInfo.xcprivacy']
+    'PPrivacy' => ['Sources/Crypto/PrivacyInfo.xcprivacy']
   }
  
   s.pod_target_xcconfig = {
