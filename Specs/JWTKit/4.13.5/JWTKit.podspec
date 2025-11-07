@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.subspec 'CJWTKitBoringSSL' do |ss|
     ss.source_files = ['Sources/CJWTKitBoringSSL/**/*.c', 'Sources/CJWTKitBoringSSL/**/*.cc', 'Sources/CJWTKitBoringSSL/**/*.h']
     ss.public_header_files = 'Sources/CJWTKitBoringSSL/include/**/*.h'
+    ss.private_header_files = 'Sources/CJWTKitBoringSSL/crypto/**/*.h' # 👈 添加这行
     ss.header_dir = 'CJWTKitBoringSSL'
     ss.preserve_paths = 'Sources/CJWTKitBoringSSL/include/module.modulemap'
     ss.exclude_files = [
