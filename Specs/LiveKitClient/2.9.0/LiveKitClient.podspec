@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.source = {:git => "https://github.com/livekit/client-sdk-swift.git", :tag => spec.version.to_s}
 
   spec.source_files = "Sources/**/*"
-  spec.resource_bundles = {"PPrivacy" => ["Sources/LiveKit/PrivacyInfo.xcprivacy"]}
+  # spec.resource_bundles = {"PPrivacy" => ["Sources/LiveKit/PrivacyInfo.xcprivacy"]}
   spec.dependency("LiveKitWebRTC", "= 137.7151.10")
   spec.dependency("SwiftProtobuf")
   spec.dependency("DequeModule", "= 1.1.4")
